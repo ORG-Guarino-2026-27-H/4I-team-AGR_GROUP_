@@ -1,27 +1,58 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titolo del sito</title>
-  <!-- Dalla Milestone 2: <link rel="stylesheet" href="css/style.css"> -->
+  <title>Vailtra - Accedi</title>
+  <style>
+    body {
+      background-image: url("sfondo.jgp.avif"); /* sfondo imaggine*/
+      background-size: cover;
+      background-repeat: no-repeat;  /*la foto non si ripete*/
+      background-attachment: fixed;  /*la foto copre tt lo schermo*/
+      background-color: darkblue;  /*sfondo blu in caso foto nn carica*/
+      color: gold;                 /*scritte oro*/
+      text-align: center;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 130px;            /* grandezza del titolo VAILTRA */
+      margin: 20px;
+    }
+
+    input {
+      font-size: 30px;
+      width: 300px;
+    }
+
+    button {
+      font-size: 30px;
+      margin-top: 20px;
+      color: gold;
+      background-color: darkblue;
+    }
+
+    p {
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Titolo del sito</h1>
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
-  </header>
 
-  <main>
-    <p>Contenuto della pagina.</p>
-  </main>
+  <h1>VAILTRA</h1>
+  <p>Your Wealth, Your Vault</p>
 
-  <footer>
-    <p>Classe 4ª – Team ...</p>
-  </footer>
+  <form action="index.html">
+    <p>E-mail</p>
+    <input type="email" placeholder="Inserisci e-mail">
 
-  <!-- Dalla Milestone 3: <script src="js/script.js"></script> -->
+    <p>Password</p>
+    <input type="password" placeholder="Inserisci password">
+
+    <br>
+    <button type="submit">ACCEDI</button>
+  </form>
+
 </body>
 </html>
