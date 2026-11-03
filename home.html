@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vailtra - Home</title>
+  <style>
+    body {
+      background-color: #050b1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    .menu {
+      width: 250px;
+      min-height: 100vh;
+      background-color: #0b1a3a;
+      padding: 20px;
+    }
+
+    .menu h1 {
+      color: gold;
+      text-align: center;
+      font-size: 55px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+    }
+
+    .menu a:hover {
+      background-color: #1c3d8f;
+    }
+
+    .contenuto {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .saldo {
+      background-color: #0b2a5b;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .saldo h2 {
+      font-size: 45px;
+      margin: 10px 0;
+    }
+
+    .entrata { color: lightgreen; }
+    .uscita { color: tomato; }
+
+    button {
+      font-size: 16px;
+      padding: 10px 15px;
+      margin-right: 10px;
+    }
+
+    details {
+      background-color: #0b1a3a;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h1>VAILTRA</h1>
+    <a href="home.html">Home</a>
+    <a href="transazioni.html">Transazioni</a>
+    <a href="investimenti.html">Investimenti</a>
+    <a href="impostazioni.html">Impostazioni</a>
+    <a href="index.html">Esci</a>   <!-- torna al login -->
+  </div>
+
+  <div class="contenuto">
+    <h1>Ciao</h1>
+    <p>Ecco la panoramica della tua situazione finanziaria.</p>
+
+    <div class="saldo">
+      <p>SALDO TOTALE</p>
+      <h2>€ 45.478,15</h2>
+      <p>ENTRATE: <span class="entrata">€ 8.750,00</span></p>
+      <p>USCITE: <span class="uscita">€ 7.341,25</span></p>
+    </div>
+
+    <h3>AZIONI RAPIDE</h3>
+    <button>Aggiungi entrata</button>
+    <button>Aggiungi uscita</button>
+    <button>Trasferimento</button>
+    <button>Analisi spese</button>
+
+    <h3>CRONOLOGIA TRANSAZIONI</h3>
+
+    <details>
+      <summary>Stipendio - <span class="entrata">+ € 2.500,00</span></summary>
+      <p>Tipo: Entrata</p>
+      <p>Categoria: Lavoro</p>
+      <p>Data: 24 novembre 2025</p>
+    </details>
+
+    <details>
+      <summary>Affitto - <span class="uscita">- € 1.000,00</span></summary>
+      <p>Tipo: Uscita</p>
+      <p>Categoria: Casa</p>
+      <p>Data: 30 Ottobre 2025</p>
+    </details>
+
+    <details>
+      <summary>Spesa supermercato - <span class="uscita">- € 85,40</span></summary>
+      <p>Tipo: Uscita</p>
+      <p>Categoria: Spese personali</p>
+      <p>Data: 13 ottobre 2025</p>
+    </details>
+
+    <details>
+      <summary>Freelance Project - <span class="entrata">+ € 900,00</span></summary>
+      <p>Tipo: Entrata</p>
+      <p>Categoria: Lavoro</p>
+      <p>Data: 28 settembre 2025</p>
+    </details>
+
+    <details>
+      <summary>Cena ristorante - <span class="uscita">- € 62,30</span></summary>
+      <p>Tipo: Uscita</p>
+      <p>Categoria: Svago</p>
+      <p>Data: 27 agosto 2025</p>
+    </details>
+
+  </div>
+
+</body>
+</html>
