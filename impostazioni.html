@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vailtra - Impostazioni</title>
+  <style>
+    body {
+      background-color: #050b1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    .menu {
+      width: 280px;
+      min-height: 100vh;
+      background-color: #0b1a3a;
+      padding: 20px;
+    }
+
+    .menu h1 {
+      color: gold;
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+    }
+
+    .menu a:hover {
+      background-color: #1c3d8f;
+    }
+
+    .contenuto {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .scheda {
+      background-color: #0b1a3a;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    .scheda h3 {
+      margin: 0;
+    }
+
+    .rosso a {
+      color: tomato;
+      font-size: 20px;
+    }
+
+    button, select {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h1>VAILTRA</h1>
+    <a href="home.html">Home</a>
+    <a href="transazioni.html">Transazioni</a>
+    <a href="investimenti.html">Investimenti</a>
+    <a href="impostazioni.html">Impostazioni</a>
+    <a href="index.html">Esci</a>
+  </div>
+
+  <div class="contenuto">
+    <h1>Impostazioni</h1>
+    <p>Gestisci il tuo account e personalizza l'app</p>
+
+    <div class="scheda">
+      <h2>UTENTE</h2>
+      <p>utente@vailtra.com</p>
+      <button>Modifica profilo</button>
+    </div>
+
+    <div class="scheda">
+      <h3>🛡️ Sicurezza</h3>
+      <p>Gestisci la sicurezza del tuo account e attiva l'autenticazione a due fattori.</p>
+    </div>
+
+    <div class="scheda">
+      <h3>🔔 Notifiche</h3>
+      <p>Personalizza le notifiche su transazioni, investimenti e altro.</p>
+      <input type="checkbox" checked> Attive
+    </div>
+
+    <div class="scheda">
+      <h3>🎨 Aspetto</h3>
+      <p>Scegli il tema dell'app (chiaro o scuro).</p>
+      <input type="radio" name="tema" checked> Scuro
+      <input type="radio" name="tema"> Chiaro
+    </div>
+
+    <div class="scheda">
+      <h3>🌐 Lingua</h3>
+      <p>Imposta la lingua dell'interfaccia.</p>
+      <select>
+        <option>Italiano</option>
+        <option>English</option>
+      </select>
+    </div>
+
+    <div class="scheda">
+      <h3>🎧 Centro assistenza</h3>
+      <p>Trova risposte alle tue domande o contatta il nostro supporto.</p>
+    </div>
+
+    <div class="scheda">
+      <h3>ℹ️ Informazioni su VAILTRA</h3>
+      <p>Versione app: 1.0.0</p>
+    </div>
+
+    <div class="scheda rosso">
+      <a href="index.html">🚪 Disconnetti</a>
+      <p>Esci dal tuo account in modo sicuro.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

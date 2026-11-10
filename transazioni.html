@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vailtra - Transazioni</title>
+  <style>
+    body {
+      background-color: #050b1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    .menu {
+      width: 280px;
+      min-height: 100vh;
+      background-color: #0b1a3a;
+      padding: 20px;
+    }
+
+    .menu h1 {
+      color: gold;
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+    }
+
+    .menu a:hover {
+      background-color: #1c3d8f;
+    }
+
+    .contenuto {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .entrata { color: lightgreen; }
+    .uscita { color: tomato; }
+
+    details {
+      background-color: #0b1a3a;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h1>VAILTRA</h1>
+    <a href="home.html">Home</a>
+    <a href="transazioni.html">Transazioni</a>
+    <a href="investimenti.html">Investimenti</a>
+    <a href="impostazioni.html">Impostazioni</a>
+    <a href="index.html">Esci</a>
+  </div>
+
+  <div class="contenuto">
+    <h1>Transazioni</h1>
+    <p>Tutte le tue entrate e uscite. Clicca su una voce per vedere i dettagli.</p>
+
+    <details>
+      <summary>Stipendio - <span class="entrata">+ € 2.500,00</span></summary>
+      <p>Entrata - Lavoro - 31 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Affitto - <span class="uscita">- € 700,00</span></summary>
+      <p>Uscita - Casa - 30 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Spesa supermercato - <span class="uscita">- € 85,40</span></summary>
+      <p>Uscita - Spese personali - 29 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Freelance Project - <span class="entrata">+ € 450,00</span></summary>
+      <p>Entrata - Lavoro - 28 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Cena ristorante - <span class="uscita">- € 62,30</span></summary>
+      <p>Uscita - Svago - 27 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Bolletta luce - <span class="uscita">- € 78,90</span></summary>
+      <p>Uscita - Casa - 25 Ottobre 2026</p>
+    </details>
+
+    <details>
+      <summary>Abbonamento palestra - <span class="uscita">- € 35,00</span></summary>
+      <p>Uscita - Sport - 22 Ottobre 2026</p>
+    </details>
+
+  </div>
+
+</body>
+</html>
